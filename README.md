@@ -1,0 +1,2 @@
+# PicStar
+Rails CRUD app
