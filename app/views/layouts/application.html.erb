@@ -22,13 +22,19 @@
     <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li>
+          <%= link_to "Home", '/photos' %>
+        </li>
+        <li>
           <%= link_to "New Photo", new_photo_path %>
         </li>
         <li>
-          <%= link_to "Login", '#' %>
+          <%= link_to "Login", '/users/sign_in' %>
+        </li>
+         <li>
+          <%= link_to "Log Out", destroy_user_session_path, method: :delete%>
         </li>
         <li>
-          <%= link_to "Register", '#' %>
+          <%= link_to "Sign Up", '/users/sign_up' %>
         </li>
       </ul>
     </div>
@@ -37,6 +43,12 @@
 
 
   <body>
+    <% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
     <%= yield %>
   </body>
 </html>

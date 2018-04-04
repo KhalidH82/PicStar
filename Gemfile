@@ -9,6 +9,8 @@ gem 'paperclip', '~> 4.2'
 gem 'simple_form'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'jquery-rails'
+gem 'devise'
+gem 'pry'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.6'
 # Use postgresql as the database for Active Record

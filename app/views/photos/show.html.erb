@@ -6,5 +6,6 @@
   <div>
     <%= link_to "Cancel", photos_path %>
     <%= link_to "Edit Photo", edit_photo_path(@photo) %>
+    <%= link_to 'Destroy', photo_path(@photo), :method => "delete"%>
   </div>
 
