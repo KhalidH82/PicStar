@@ -1,1 +1,11 @@
 <h1>Photos</h1>
+
+<div class='container'>
+	<% @photos.each do |photo| %>
+	<div><%= link_to (image_tag photo.image.url(:medium)), photo_path(photo) %></div>
+		<h2>Location: <%= photo.location %> </h2>
+		<h2>Description: <%= photo.description %> </h2>
+	<% end %>
+</div>
+
+
