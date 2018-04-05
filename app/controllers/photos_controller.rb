@@ -14,12 +14,13 @@ class PhotosController < ApplicationController
   end
 
   def create
+    p post_params
   	@photo = Photo.create(post_params)
     if @photo.save
   	redirect_to photos_path
-  else
-    redirect_to new_photo_path
-  end
+    else
+      redirect_to new_photo_path
+    end
   end
 
   def edit
@@ -34,9 +35,8 @@ class PhotosController < ApplicationController
 
   def destroy
    
-   p 'i am inside destroy '
     @photo = Photo.find(params[:id])
-    binding.pry
+  
     Photo.delete(params['id'])
     redirect_to photos_path
   end
@@ -45,7 +45,7 @@ class PhotosController < ApplicationController
 
   def post_params
 
-  params.require(:photo).permit(:image, :location, :description) 
+  params.require(:photo).permit(:image, :location, :description, :user_id) 
 
   end
 
