@@ -1,8 +1,10 @@
 require 'pry'
 
 class PhotosController < ApplicationController
+
   def index
   	@photos = Photo.all
+    @comment = Comment.new
   end
 
   def show
@@ -24,7 +26,7 @@ class PhotosController < ApplicationController
   end
 
   def edit
-  	@photo = Photo.find(params[:id])
+    @photo = Photo.find(params[:id])
   end
 
   def update
@@ -34,10 +36,8 @@ class PhotosController < ApplicationController
   end
 
   def destroy
-   
     @photo = Photo.find(params[:id])
-  
-    Photo.delete(params['id'])
+    Photo.delete(params[:id])
     redirect_to photos_path
   end
 

@@ -5,9 +5,16 @@
 <div class='container'>
 	<% @photos.each do |photo| %>
 	<div><%= link_to (image_tag photo.image.url(:medium)), photo_path(photo) %></div>
-		<h2>Location: <%= photo.location %> </h2>
-		<h2>Description: <%= photo.description %> </h2>
+		<h3>Location: <%= photo.location %> </h3>
+		<p>Description: <%= photo.description %> </p>
+		<p>Comments: </p>
+		<%photo.comments.each do |comment| %>
+		<%= comment[:content]%>
+		<%end%>
+		<!-- Link to new comment from -->
+		
+		<%= render "layouts/form", photo: photo %>
 	<% end %>
-</div>
 
+</div>
 
