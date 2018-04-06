@@ -1,3 +1,5 @@
+
+<div class="new">
 <%= simple_form_for @photo do |pic| %>
   <%= pic.input :image %><br>
   <%= pic.input :location %><br>
@@ -5,6 +7,7 @@
   <%= pic.button :submit %>
   <%= pic.hidden_field :user_id, value: current_user.id.to_i %>
 <% end %>
+</div>
 
 
 

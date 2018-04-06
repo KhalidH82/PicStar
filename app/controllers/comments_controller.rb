@@ -1,9 +1,9 @@
 class CommentsController < ApplicationController
 
   def index
-  	p params
+  	# p params
   	@comments = Comment.where(:photo_id => params[:photo_id])
-  	p "HERE I AM !!!1", @comments
+  	# p "HERE I AM !!!1", @comments
   end
 
   def show

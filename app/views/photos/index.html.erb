@@ -1,23 +1,26 @@
 <h1>Photos</h1>
-
-<%= link_to "My photos", user_path(current_user.id) %>
-
+<button><%= link_to "My photos", user_path(current_user.id) %></button>
+</br>
+</br>
 <div class='wrapper'>
+
 	<% @photos.each do |photo| %>
-	<div class="polaroid"><%= link_to (image_tag photo.image.url(:medium)), photo_path(photo) %></div>
+	<%= link_to (image_tag photo.image.url(:medium)), photo_path(photo) %>
 		<h3>Location: <%= photo.location %> </h3>
-		<p>Description: <%= photo.description %> </p>
-		<div class="caption">
-		<p>Comments: </p>
+		<h3>Description: <%= photo.description %> </h3>
+
+		<h4>Comments: </h4>
 		<%photo.comments.each do |comment| %>
-		<%= comment[:content]%><br>
+		<h4><%= comment[:content]%><br></h4>
 		<%end%>
 		<!-- Link to new comment from -->
 
 		<%= render "layouts/form", photo: photo %>
+		<br>
+	</br>
 	<% end %>
-
 </div>
+
 
 
 
