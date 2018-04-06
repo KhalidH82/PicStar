@@ -3,8 +3,7 @@
 <h1>PicStar<h1>
 Mini Ruby on Rails Project
 
-<h2>Name and Description</h2>
-PicStar
+<h2>Description</h2>
 <p>This application is a photo collection where users can upload pictures and add a location and description of the photo. Users are able to view all photos uploaded by other users and add comments if they choose.</p>
 
 <h2>Future Build Out</h2>
