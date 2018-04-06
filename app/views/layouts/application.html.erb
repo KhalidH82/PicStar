@@ -6,8 +6,9 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-inverse">
   <div class="navbar-container">
     <div class="navbar-header">
       <button class="navbar-toggle collapsed" data-target="#bs-navbar-collapse-1" data-toggle="collapse" type="button">
@@ -16,13 +17,16 @@
         <span class="icon-bar"></span>
       </button>
       <div class="navbar-brand">
-      	
+        
       </div>
     </div>
     <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+      <a class="navbar-brand" href="/">
+        <img class="logo" alt="Brand" src="../../pic.png">
+      </a>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <%= link_to "Home", '/photos' %>
+          <%= link_to "Home", '/' %>
         </li>
         <li>
           <%= link_to "New Photo", new_photo_path %>
@@ -40,7 +44,6 @@
     </div>
   </div>
 </nav>
-
 
   <body>
     <% if notice %>

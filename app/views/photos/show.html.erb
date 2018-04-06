@@ -1,11 +1,11 @@
-<h1>Photos</h1>
+
 <%= image_tag @photo.image.url(:medium) %>
-  <p>
+  <h3>
     <%= @photo.location %>
-  </p>
+  </h3>
   <div>
-    <%= link_to "Cancel", photos_path %>
-    <%= link_to "Edit Photo", edit_photo_path(@photo) %>
-    <%= link_to 'Destroy', photo_path(@photo), :method => "delete"%>
+<button> <%= link_to "Cancel", photos_path %> </button>
+<button> <%= link_to "Edit Photo", edit_photo_path(@photo) %> </button>
+<button> <%= link_to 'Delete', photo_path(@photo), :method => "delete"%> </button>
   </div>
 
