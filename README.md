@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+PicStar
+Mini Ruby on Rails Project
 
-Things you may want to cover:
+Name and Description
+PicStar
+This application is a photo collection where users can upload pictures and add a location and description of the photo. Users are able to view all photos uploaded by other users and add comments if they choose.
 
-* Ruby version
+Future Build Out
+Some other things that I would like my app to include is the ability for users to have friends where they are only able to see each others photos and not all users. Also I would like the comments to be edited and deleted as well. Another feature I want to incorporate is a search bar which take the location take of the photo and place markers on a Google map.
 
-* System dependencies
+Technologies Used
+Ruby on Rails, Devise, Paperclip, Bootstrap
 
-* Configuration
+Database structure
+My database consists of 3 tables, users photos and comments.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Resources
