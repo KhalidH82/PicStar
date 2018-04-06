@@ -1,11 +1,11 @@
-<h1> Your Photos </h1>
+<h1>My Collection</h1>
 
 <div class='container'>
 	<% @user.photos.each do |photo| %>
 	<div><%= link_to (image_tag photo.image.url(:medium)), photo_path(photo) %></div>
-		<h3>Location: <%= photo.location %> </h3>
-		<p>Description: <%= photo.description %> </p>
-		
+		<h3><%= photo.location %> </h3>
+		<p><%= photo.description %> </p>
+
 	<% end %>
 	
 </div>
