@@ -1,19 +1,19 @@
-# README
 
-PicStar
+
+<h1>PicStar<h1>
 Mini Ruby on Rails Project
 
-Name and Description
+<h2>Name and Description</h2>
 PicStar
-This application is a photo collection where users can upload pictures and add a location and description of the photo. Users are able to view all photos uploaded by other users and add comments if they choose.
+<p>This application is a photo collection where users can upload pictures and add a location and description of the photo. Users are able to view all photos uploaded by other users and add comments if they choose.</p>
 
-Future Build Out
-Some other things that I would like my app to include is the ability for users to have friends where they are only able to see each others photos and not all users. Also I would like the comments to be edited and deleted as well. Another feature I want to incorporate is a search bar which take the location take of the photo and place markers on a Google map.
+<h2Future Build Out</h2>
+<p>Some other things that I would like my app to include is the ability for users to have friends where they are only able to see each others photos and not all users. Also I would like the comments to be edited and deleted as well. Another feature I want to incorporate is a search bar which take the location take of the photo and place markers on a Google map.</p>
 
-Technologies Used
-Ruby on Rails, Devise, Paperclip, Bootstrap
+<h2>Technologies Used</h2>
+<p>Ruby on Rails, Devise, Paperclip, Bootstrap</p>
 
-Database structure
-My database consists of 3 tables, users photos and comments.
+<h2>Database structure</h2>
+<p>My database consists of 3 tables, users photos and comments.</p>
 
-Resources
+<h2>Resources</h2>
